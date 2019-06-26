@@ -10,6 +10,7 @@ Created on %(date)s
 #%
 stratified boxplot using the by keyword argument to create groupings.
 import pandas as pd
+import numpy as np
 df = pd.DataFrame(np.random.rand(10, 2), columns=['Col1', 'Col2'])
 df
 df['X'] = pd.Series(['A', 'A', 'A', 'A', 'A', 'B', 'B', 'B', 'B', 'B'])

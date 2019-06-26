@@ -79,10 +79,11 @@ df.groupby(['gear','cyl']).size()
 df.groupby(['gear','cyl']).count()['am']  #not very simple 
 df.groupby(['gear','cyl']).count()['am'].plot.bar() #not very simple
 df.groupby(['gear','cyl']).count()['am'].unstack()  #better to see
-df.groupby(['gear','cyl','am']).size().plot(kind='barh', color='g')
+df.groupby(['gear','cyl','am']).size().plot(kind='barh',legend=True)
 #gear, cyl, am
 df.groupby(['am','vs']).size().plot.bar()
 df.groupby(['gear','cyl']).size().plot.barh()
+
 
 #Histogram
 df.mpg.hist()  #call directly
